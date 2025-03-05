@@ -46,13 +46,13 @@ table th {
   text-align: start;
 }
 
-table th:first-child {
-  width: 50%;
+table th:first-child {   
+  width: 50%;   
 }
 
-table tr:nth-child(2n) {
+table tr:nth-child(2n) {   
   background-color: transparent;
-}
+}   
 
 .button--outline {
   --ifm-button-border-color: var(--ifm-color-secondary-darker);
