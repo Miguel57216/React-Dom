@@ -13,7 +13,7 @@ import { css, html } from 'react-strict-dom';
 import { tokens, themeColors, systemColors } from './tokens.stylex';
 
 type ExampleBlockProps = $ReadOnly<{
-  title: string,
+  title: string,  
   children: React.Node
 }>;
 
@@ -21,15 +21,15 @@ const egStyles = css.create({
   container: { borderTopWidth: 1 },
   h1: { padding: 10, backgroundColor: '#eee' },
   content: { padding: 10 },
-  div: {
+  div: {  
     paddingBlock: 50,
-    backgroundColor: 'white'
+    backgroundColor: 'white'   
   }
-});
+});   
 
 function ExampleBlock(props: ExampleBlockProps) {
   const { title, children } = props;
-  return (
+  return (  
     <html.div style={egStyles.container}>
       <html.h1 style={egStyles.h1}>{title}</html.h1>
       <html.div style={egStyles.content}>{children}</html.div>

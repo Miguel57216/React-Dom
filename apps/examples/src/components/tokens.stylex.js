@@ -20,26 +20,26 @@ export const tokens: StyleVars<
   }>
 > = css.defineVars({
   squareColor: 'red',
-  textColor: {
+  textColor: {    
     default: 'darkred',
     '@media (prefers-color-scheme: dark)': 'lightred'
-  },
+  },   
   inputColor: 'red',
-  inputPlaceholderColor: 'pink'
+  inputPlaceholderColor: 'pink'  
 });
 
 export const themeColors: StyleVars<
   $ReadOnly<{
-    primary100: string,
+    primary100: string,  
     primary200: string
   }>
 > = css.defineVars({
   primary100: 'black',
-  primary200: 'white'
+  primary200: 'white'   
 });
 
 export const systemColors: StyleVars<
-  $ReadOnly<{
+  $ReadOnly<{   
     squareColor: string,
     outlineColor: string
   }>
